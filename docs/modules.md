@@ -156,7 +156,7 @@ Example:
 ```starlark
 load("secret.star", "secret")
 
-ENCRYPTED_API_KEY = "AV6+..." . # from `pixlet encyrpt`
+ENCRYPTED_API_KEY = "AV6+..." . # from `pixlet encrypt`
 
 def main(config):
     api_key = secret.decrypt(ENCRYPTED_API_KEY) or config.get("dev_api_key")
